@@ -21,7 +21,7 @@ body{
   */
 
   #showcase{
-    background-image: url(/img/pexels-mohamed-khaled-397998.jpg);
+    background-image: url(../img/pexels-mohamed-khaled-397998.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;

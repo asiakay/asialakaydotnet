@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+
+<!-- Loading Font Awesome Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200&display=swap" rel="stylesheet"> 
+    
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>ASIALAKAY.NET</title>
+  
+  <!-- Link to stylesheet -->
+  
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+
+
+<div class="header">
+  <h1>Hi, I'm Asia. Welcome to my dev portfolio! </h1>
+    <h2>ASIALAKAY.NET
+      <p></p>
+      Art | Bitcoin | Community | DevOps |</h2>
+      <br>we made it!
+      </div>
+
+
+<!-- Header and Cloudinary upload -->
+<div class="row">
+  <div class="side">
+    <div style="width: 100%; text-align: right;"><h2>Welcome to ASIALAKAY.NET</h2>
+      <p style="margin-bottom: 50px;">Art | Bitcoin | Community | DevOps | </p>
+      <button id="upload_widget" class="cloudinary-button">Upload files</button>
+
+    </div>
+  </div>
+</div>
+  <header id="showcase">
+
+  </header>
+<div>
+
+  
+     
+<!-- The social media icon bar -->
+
+
+
+
+
+
+
+    
+
+      <!-- sticky footer -->
+    <div class="footer">
+      <!-- flexbox footer info -->
+      <div class="flex-container">
+        
+       <div>Copyright &copy 2021  All Rights Reserved</div>
+       <div></div>
+
+        <div>Image Credit: <a href="https://www.pexels.com/@mohamed-khaled-130793" target="blank">Mohamed Khaled via Pexels.com</a></div>
+      </div>
+
+
+      
+    
+    
+    </div>
+
+
+<!--       <section id="section-a">
+        <p>
+
+        "It's quite too funny. I am sure you could never guess how I employed my morning, or what I ended by doing."
+
+"I can't imagine. I suppose that you have been watching the habits, and perhaps the house, of Miss Irene Adler."
+        </p>
+      </section>
+
+
+      <section id="section-b">
+        <p>
+        "It's quite too funny. I am sure you could never guess how I employed my morning, or what I ended by doing."
+        "It's quite too funny. I am sure you could never guess how I employed my morning, or what I ended by doing."
+
+"I can't imagine. I suppose that you have been watching the habits, and perhaps the house, of Miss Irene Adler."
+        </p>
+      </section>
+
+      <section id="section-c">
+
+
+      <div class="box-1">        "It's quite too funny. I am sure you could never guess how I employed my morning, or what I ended by doing."</div>
+      
+      <div class="box-2">        "It's quite too funny. I am sure you could never guess how I employed my morning, or what I ended by doing."</div>
+      
+      <div class="box-3">        "It's quite too funny. I am sure you could never guess how I employed my morning, or what I ended by doing."
+</div>
+      
+    </section> -->
+
+<!-- Cloudinary javascript file: https://media-editor.cloudinary.com/all.js. -->
+    <script src="https://media-editor.cloudinary.com/all.js" type="text/javascript">  
+    </script>
+
+
+<!-- Cloudinary JS upload one   -->
+    <script src="https://upload-widget.cloudinary.com/global/all.js" type="text/javascript"></script> 
+
+    <!-- Cloudinary JS upload two  -->
+
+<script type="text/javascript">  
+      var myWidget = cloudinary.createUploadWidget({
+        cloudName: 'asiala', 
+        uploadPreset: 'kfrxvipr'}, (error, result) => { 
+          if (!error && result && result.event === "success") { 
+            console.log('Done! Here is the image info: ', result.info); 
+          }
+        }
+      )
+      
+      document.getElementById("upload_widget").addEventListener("click", function(){
+          myWidget.open();
+        }, false);
+      </script>
+  
+  
+  
+  </body>
+
+   <!-- Project Tutorial: 
+    Easy Fullscreen Landing Page Tutorial by Traversy Media: https://youtu.be/hVdTQWASliE 
+    Codepen Link: https://codepen.io/bradtraversy/details/XerXYV 
+  -->
+<!-- Sticky Social Bar Reference https://www.w3schools.com/howto/howto_css_sticky_social_bar.asp -->
+
+<!-- Sticky Footer Reference https://www.w3schools.com/howto/howto_css_fixed_footer.asp -->
+
+</html>

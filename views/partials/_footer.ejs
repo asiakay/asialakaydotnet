@@ -1,0 +1,65 @@
+<footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-3">
+    <!-- Section: Social media -->
+    <section class="mb-2">
+
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+  
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    &copy; 2020 Copyright Asia L. Grady
+  </div>
+  <!-- Copyright -->
+</footer>
+
+<!-- cloudinary media gallery config starts -->
+<script src="https://media-library.cloudinary.com/global/all.js"></script>
+
+<script>
+window.ml = cloudinary.createMediaLibrary({
+   cloud_name: CLOUD_NAME,
+   api_key: API_KEY,
+   username: USERNAME,
+   button_class: 'myBtn',
+   button_caption: 'View Media',
+ }, {
+     insertHandler: function (data) {
+        data.assets.forEach(asset => { 
+          console.log("Inserted asset:", JSON.stringify(asset, null, 2))
+      })
+    }
+  },
+    document.getElementById("open-btn")
+)
+</script>
+
+  <!-- cloudinary media gallery config ends -->
+<!-- could do a window.display or getElementbyID  -->
+<script type="text/javascript">
+  function onData(data) {
+      const highest = event.detail.highest;
+      console.log(`Highest score was ${highest.score} on ${highest.date}`);
+    }
+    document.querySelector('#skills-chart').addEventListener('data', onData);
+    </script>

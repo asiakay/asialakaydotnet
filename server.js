@@ -1,6 +1,6 @@
 // load env vars
 
-require('dotenv').config();
+require('dotenv').config(); 
 
 // load dev dependencies
 var express = require('express');
@@ -10,22 +10,6 @@ var app = express();
 // set the view engine
 app.set('view engine', 'ejs');
 // use res.render to load ejs view file
-
-// enable cors
-app.use(function(req, res, next){
-  res.header("Access-Control-Allow-Origin", "localhost:8080");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  next();
-});
-
-app.get('/', function(req, res, next) {
-  // Handle the get for this route
-});
-
-app.post('/', function(req, res, next) {
-  // Handle the post for this route
- });
-
 // index page
 app.get('/', function(req, res){
   res.render('pages/index');

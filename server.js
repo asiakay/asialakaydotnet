@@ -1,24 +1,49 @@
-var path = require('path');
+// load dev dependencies
 var express = require('express');
-var layout = require('express-layout');
-
-var routes = require('./routes');
-
-//initialize express 
+var path = require('path');
 
 var app = express();
+// set the view engine
+app.set('view engine', 'ejs');
+// use res.render to load ejs view file
+// index page
+app.get('/', function(req, res){
+  res.render('pages/index');
+});  
+
+// not working 
+/* app.get('/', function(req, res){
+  res.sendFile(path.join(__dirname, 'pages/index'));
+}); */
+
+
+app.listen(8080);
+console.log('8080 is the magic port');
+
+
+
+/* var path = require('path');
+ */
+
+/* var express = require('express'); */
+
+/* var routes = require('./routes');
+ */
+//initialize express 
+
+/* var app = express(); */
 
 
 /* load env vars */
 
-require('dotenv').config();
+/* require('dotenv').config(); */
 
 // require file system
-var fs = require('fs');
-
+/* var fs = require('fs');
+ */
 
 // Load cloudinary modules 
-var cloudinary = require('cloudinary').v2;
+/* var cloudinary = require('cloudinary').v2; */
 
 
 
@@ -34,7 +59,7 @@ var cloudinary = require('cloudinary').v2;
 
 
 /*defining and requiring ejs object */
-const ejs = require('ejs')
+/* const ejs = require('ejs') */
 
 
 
@@ -104,53 +129,51 @@ found 0 vulnerabilities
 exported by the express module. */
 
 
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
+/* app.set('views', path.join(__dirname, 'views'));
+ */
 
+/* app.set('views', './views'); */
+/* app.set('view engine', 'ejs'); */
 
-const middlewares = [
-  layout(),
-  expres.static(path.join(__dirname, 'public')),
-];
-
-app.use(express.static('public'));
-app.use(middlewares);
-
-app.use('/', routes);
-
-app.use((err, req, res, next) => {
-  console.error(err.stack);
-  res.status(500).send('Something went wrong!');
-});
-
-// port to run website on 
-/* app.listen() listens for connections  */
-
-app.listen(8080, () => {
-  console.log('App running at http://localhost:8080');
-});
-
-
+/* Navigation */
 
 /* loading ejs view files */
 
 /* index.html () => index.ejs 
 sensd view to user with res.render() method */
-app.get('/', function(req, res){
-    res.render('pages/index');
-});
+/* app.get('/', function(req, res){
+  res.render('pages/index');
+}); */
 
 /* flex-box-demo.html () => flex-box-demo.ejs */
-app.get('/about', function(req, res){
-    res.render('pages/about');
-});
+/* app.get('/about', function(req, res){
+  res.render('pages/about');
+}); */
 
 /* flex-box-demo.html () => flex-box-demo.ejs */
-app.get('/dev', function(req, res){
-    res.render('pages/dev');
-});
+/* app.get('/dev', function(req, res){
+  res.render('pages/dev');
+}); */
 
 
 
-const { port } = require('./config');
-console.log(`your port is ${ port }`);
+
+
+/* app.use(express.static('public')); */
+
+/* app.use('/', routes);
+ */
+
+
+// port to run website on 
+/* app.listen() listens for connections  */
+
+/* app.listen(8080);
+ */
+
+/* app.listen(port, () => console.info(`App listening on port ${port}`)); */
+
+
+
+/* const { port } = require('./config'); */
+/* console.log(`your port is ${ port }`); */

@@ -14,7 +14,7 @@
   "bugs": {
     "url": "https://github.com/asiakay/asialakaydotnet/issues"
   },
-  "homepage": "https://github.com/asiakay/asialakaydotnet#readme",
+  "homepage": "https://asialakaydotnet.herokuapp.com/",
   "description": "developer portfolio demo",
   "dependencies": {
     "@codersrank/portfolio": "^0.9.9",
@@ -29,7 +29,9 @@
     "express": "^4.17.1",
     "jquery": "^3.6.0",
     "jsdom": "^16.6.0",
-    "mdb-ui-kit": "^3.6.0"
+    "mdb-ui-kit": "^3.6.0",
+    "multiparty": "^4.2.2",
+    "nodemailer": "^6.6.1"
   },
   "engines": {
     "node": "14.16.0"

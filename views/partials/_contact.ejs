@@ -1,28 +1,22 @@
 <div class="container p-3" id="contact">
 <!-- Default form contact -->
-<form name="contactform" id="" class="text-center border border-light p-5" action="contact.php" method="post">
+<form name="contactform" id="contact_me" class="text-center border border-light p-5" action="send" method="post" enctype ="multipart/form-data">
 
     <p class="h4 mb-4" >Contact Me</p>
 
     <!-- Name -->
-    <input type="text" id="Name" name="visitor_name" class="form-control mb-4" placeholder="Name">
+    <input type="text" id="Name"  class="form-control mb-4" placeholder="Name" required>
 
     <!-- Email -->
-    <input type="email" id="Email" name="visitor_email" class="form-control mb-4" placeholder="E-mail">
+    <input type="email" name="_email" id="Email" class="form-control mb-4" placeholder="E-mail" required>
 
     <!-- Subject -->
-    <label>Subject</label>
-    <select id="contact_reason" name="visitor_contact_reason" class="browser-default custom-select mb-4">
-        <option value="" disabled>Choose option</option>
-        <option value="feedback" selected>Feedback</option>
-        <option value="quote">Request a quote</option>
-        <option value="bug">Report a bug</option>
-        <option value="other">Other</option>
-    </select>
+    <input type="text" name="_subject" id="Subject" class="form-control mb-4" placeholder="Subject" required>
+   
 
     <!-- Message -->
     <div class="form-group">
-        <textarea class="form-control rounded-0" id="Message" name="visitor_message" rows="3" placeholder="Message"></textarea>
+        <textarea name="_message" class="form-control rounded-0" id="Message" rows="3" placeholder="Message" required></textarea>
     </div>
 
     <!-- Copy -->
@@ -32,7 +26,7 @@
     </div> -->
 
     <!-- Send button -->
-    <button class="btn btn-info btn-block" id="send" type="submit">Send</button>
+    <button class="btn btn-info btn-block" value="submit" id="send" type="submit">Send</button>
 
 </form>
 <!-- Default form contact -->

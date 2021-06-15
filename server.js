@@ -14,6 +14,7 @@ app.set('view engine', 'ejs');
 app.get('/', function(req, res){
   res.render('pages/index');
 });  
+app.get('/contact')
 
 // not working 
 /* app.get('/', function(req, res){

@@ -1,5 +1,7 @@
-node_modules
-.env
+/node_modules
+npm-debug.log
+.DS_Store
+/*.env
 frameworks.md
 convert-object-array.md
 doc.md

@@ -1,3 +1,5 @@
+<!-- Bootstrap contact form with input fields and submit button. The modal will be opened when click on show contact form button. -->
+
 <div id="contact"><button type="button" class="btn btn-info btn" data-toggle="modal" data-target="#contact-modal">Show Contact Form</button></div>
 <div id="contact-modal" class="modal fade" role="dialog">
 	<div class="modal-dialog">

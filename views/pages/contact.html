@@ -1,0 +1,735 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+<meta charset="UTF-8">
+<title>ux/ui | front-end | back-end | full-stack software developer</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google Font  -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+
+<!-- Material UI Roboto font-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+
+<!-- Material UI Font Icons -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+
+
+<!-- Material Design Bootstrap CDN HTML Links Start -->
+<!-- Font Awesome -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.css"
+  rel="stylesheet"
+/>
+
+<!-- Material Design Bootstrap CDN HTML Links Start -->
+
+<!-- Material Design Bootstrap CDN JS start -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.js"
+></script>
+<!-- Material Design Bootstrap CDN JS end -->
+
+
+<!-- CSS & Scripts (loaded from CDN) -->
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- JQuery  -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<!-- duplicate bootstrap link -->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+ --><script type="text/javascript" src="contact.js"></script>
+
+
+
+<!-- Popper  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ 
+<!-- Cloudinary upload widget  -->
+ <script src="https://upload-widget.cloudinary.com/global/all.js" type="text/javascript"></script>  
+
+<!-- Cloudinary media gallery widget -->
+<script src="https://media-library.cloudinary.com/global/all.js" type="text/javascript"></script>
+
+<!-- instantiating cloudinary core library -->
+<script src="/lodash/lodash.js" type="text/javascript"></script>
+<script src="/cloudinary-core/cloudinary-core.js" type="text/javascript"></script>
+
+<!-- coders rank skills chart cdn link  -->
+<script src="https://unpkg.com/@codersrank/skills-chart@0.9.20/codersrank-skills-chart.min.js"></script>
+<!-- coders rank summary cdn  -->
+
+<script src="https://unpkg.com/@codersrank/summary@0.9.20/codersrank-summary.min.js"></script>
+ <style>
+/* start of responsive max widths 
+source: https://stackoverflow.com/a/17178084/13978364 */
+
+    /* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
+/* End of responsive max widths */
+
+ /*  <!-- Responsive layout code start - makes the three columns stack on top of each other instead of next to each other
+@media (max-width: 600px) {
+  .row {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+ /*  <!-- Responsive layout code end - makes the three columns stack on top of each other instead of next to each other --> */
+
+ 
+
+* {
+  box-sizing: border-box;
+}
+  body { 
+      padding-top:50px; 
+      font-family: 'Montserrat', sans-serif;      
+      position: relative;
+    }
+
+.headermarquee {
+  font-family: 'Lobster Two', cursive;
+  font-size: 50pt;
+}
+
+.tabheader{
+  font-family: 'Lobster Two', cursive;
+  font-size: 25pt;
+}
+
+
+
+.navbar-brand-logo {
+  font-family: 'Lobster Two', cursive;
+  font-size: 50pt;
+  margin: 0pt;
+}
+
+
+a.navbar-brand-logo {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar .nav-link {
+  color: #fff !important;
+}
+
+/* Style the header */
+.header {
+  background-color: black;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+.fab {color: white;}
+a.fab {
+  color: white;
+  outline: none; 
+}
+
+a.fab:hover { color: white;
+
+}
+
+/* Container for flexboxes */
+.row {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 10px;
+  /* height: 300px; Should be removed. Only for demonstration */
+}
+
+
+/* codersrank styling <--
+ */
+/* .codersrank-skills-chart {
+  --legend-text-color: red;
+  --legend-font-size: 12px;
+  --font-family: Arial;	
+  --chart-bg-color: black;
+} */
+
+
+
+
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+/* image gallery start */
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* image gallery end */
+
+
+.send {
+  color: #0073ac;
+
+}
+
+
+/* fetchDataAPI */
+/* Set up general layout rules for outer containers. */
+.contact-form,
+.results {
+  width: 90vw;
+  max-width: 550px;
+  margin: 8vh auto;
+}
+
+
+
+</style>
+
+
+  
+
+</head>
+<body class="container-fluid p-0 border" 
+      data-spy="scroll" 
+      data-target=".navbar" 
+      data-offset="50">
+      <!-- scrollspy code above -->
+<!-- header compiled from _head.ejs -->
+<nav class="navbar sticky-top navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Welcome</a>
+      <a class="navbar-brand" href="#about">About</a>
+      <a class="navbar-brand" href="#skills">Skills</a>
+      <a class="navbar-brand" href="#samples">Projects</a>
+      <div id="contact"> <button type="button" class="btn btn-info btn" data-toggle="modal" data-target="#contact-modal" href="contact.html">Contact Me</button> </div>
+
+<!--       <a class="navbar-brand" href="#contact">Contact</a> -->
+   </div>
+  </nav>
+
+
+<!--   <div id="contact-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <a class="close" data-dismiss="modal">×</a>
+          <h3>Contact Form</h3>
+        </div>
+        <form id="contactForm" name="contact" role="form">
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" name="name" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" name="email" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea name="message" class="form-control"></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <input type="submit" class="btn btn-success" id="submit">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div> -->
+
+
+  <header>
+<!-- left side button group -->
+<nav class="navbar navbar-light bg-light">
+<div class="container-fluid">
+  <ul class="navbar-nav me-auto">
+    <li class="nav-text"><a class="navbar-brand-logo" href="">Asia L. Grady</a></li>
+    <li class="nav-text"><h2>UX/UI Software Engineer</h2></li>
+  </ul>
+<!-- right side button group -->
+<!-- <div class="btn-group" role="group" aria-label="Basic example">
+  <button type="button" id="contact_admin" class="btn btn-secondary">Login</button>
+  <button type="button" id="upload_widget" class="btn btn-secondary cloudinary-button">Upload files</button>
+  <button type="button" id="open-btn" class="btn btn-secondary">View Media</button> 
+</div> -->
+
+<!-- </div>
+ --><!-- </div>
+ -->  </nav>
+
+</header>
+           
+        
+<!-- cloudinary upload widget config starts -->
+<script src="https://upload-widget.cloudinary.com/global/all.js" type="text/javascript"></script> 
+ 
+<script type="text/javascript">  
+  var myWidget = cloudinary.createUploadWidget({
+    cloudName: 'CLOUD_NAME', 
+    uploadPreset: 'kfrxvipr'}, (error, result) => { 
+      if (!error && result && result.event === "success") { 
+        console.log('Done! Here is the image info: ', result.info); 
+      }
+    }
+  )
+  
+  document.getElementById("upload_widget").addEventListener("click", function(){
+      myWidget.open();
+    }, false);
+  </script>
+<!-- cloudinary upload widget config ends -->
+
+    
+
+
+
+
+<header>
+  <div class="jumbotron card card-image" style="background-image: url(https://res.cloudinary.com/asiala/image/upload/v1623085005/pexels-photo-7025670_dsvub2.jpg); margin-bottom: 0px;">
+  <div class="text-white text-center py-1 px-4">
+    <ul class="list-inline">
+      <li class="list-inline-item">
+
+<!-- Github -->
+<a class=""  href="https://www.github.com/asiakay" role="">
+  <i class="fab fa-github fa-2x"></i
+></a>      
+      </li>
+<!-- Linkedin -->      
+      <li class="list-inline-item">
+        <a href="https://www.linkedin.com/in/asia-%E2%80%9Casialakay%E2%80%9D-grady-669762b3/"><i class="fab fa-linkedin-in fa-2x"></i></a>
+
+<!-- Twitter -->
+      </li>
+      <a href="https://www.twitter.com/asialakay"><li class="list-inline-item">
+        <i class="fab fa-twitter fa-2x"></i></a>
+      </li>
+
+    </ul>
+    <div>
+      <h2 class="card-title h1-responsive pt-3 mb-5 font-bold"><strong><span class="headermarquee">"We are tomorrow.<br>We are the builders of our dreams."</span></strong></h2>
+      <p class="mx-5 mb-5">
+        <p class="text-center mb-5">
+<div class="container" style="width: 60%;">          
+  <h4>Hi! My name is Asia. Welcome to my Dev portfolio.</h4> 
+  
+</div>
+
+</p>        
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+</header>
+
+
+
+<main>
+  
+<div class="container p-3" >
+  <p class="h4 mt-4 text-center" id="about">About</p>
+
+<div class="media text-justify" >
+
+    <img class="d-flex align-self-top mr-3 rounded" src="https://res.cloudinary.com/asiala/image/upload/v1623004673/20200304_162256-01_q1j2fu.jpg" height="90px" alt="Generic placeholder image">
+    <div class="media-body">
+      <h5 class="m-3 font-weight-bold" >Asia K., <sup>UX/UI Designer, Software Engineer</sup></h5>
+      <p>A life-long learner, I am inspired to continue learning about the history, current practices, and future trends impacting design thinking, build processes, and the software development life cycle. </p>
+
+      <p>Transitioning into a tech career has been a blessing. I'm grateful for the opportunity to integrate holistic approaches to UX/UI development and software engineering by drawing upon and unifying past professional experiences in the following fields.</p> 
+<ul>      
+     <li> advertising & marketing</li>
+     <li> 1099/app/gig economy work</li>
+     <li> audio/visual content creation</li>
+     <li> conflict mediation</li>
+     <li>entrepreneurship</li> 
+     <li> event promotion</li>
+     <li>graphic design</li> 
+     <li> live performance</li>
+     <li> office administration</li>
+     <li> street outreach</li>
+     <li>photography</li> 
+     <li> professional organizing</li>
+     <li> social media management</li>
+     <li> real estate marketing</li>
+     <li> logistics warehouse work</li>
+     <li> wellness research</li> 
+    </ul>
+
+
+     <p> Based on the diversity of these accumulated experiences, I feel confident and enthusiastic about adding my perspective in creating user stories, conducting marketing research, and prototyping in collaboration with my team and stakeholders as we add value to our end users' experience.  </p>
+      
+<p>     I've made it my mission as a UX/UI developer to listen, research, and craft designs that pleasantly communicate the desired content. Furthermore, I will provide clients and their customers with accessible front-end user interfaces (UI) and a pleasant and easy user experience (UX).</p> 
+  
+  <p>In conclusion, I strive to contribute to simplifiying team collaboration through creating documentation and includeng comments that explain my code, test-driven development, and engineering loosely coupled code while implementing software solutions on the back-end and through middlewares.</p>    </div>
+  </div>
+</div>
+
+  <p class="h4 m-4 text-center" id="skills">Skills Chart</p>
+
+<codersrank-skills-chart
+  username="asiakay"
+  labels
+  legend
+  tooltip
+  branding="false"
+></codersrank-skills-chart>
+
+  <p class="h4 m-4 text-center" id="samples">Project Samples</p>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://powerful-sierra-31601.herokuapp.com/">
+      <img src="https://res.cloudinary.com/asiala/image/upload/v1623750030/create_music_x1556_biwphv.png" alt="Make Music" width="600px" height="400px">
+    </a>
+    <div class="desc text-justify"><h6>Make Music:</h6> is a Single Page Application that enables the user to make live music. On the front-end, it uses ReactJS. And on the back-end uses Node.js, and Tone.js, a web audio framework for creating interactive music in the browser.
+  </div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://crypto-dashboard-deploy.herokuapp.com/">
+      <img src="https://res.cloudinary.com/asiala/image/upload/v1623702791/watch_cryptos.gif" alt="watch cryptos" width="600px" height="400px">
+    </a>
+    <div class="desc text-justify"><h6>Watch Cryptos:</h6> is a Single Page Application that allows the user to 1) select a cryptocurrency pair and 2) view a chart that displays the historical price up to the current real-time price. The back-end uses WebSockets to maintain the connection to the API that provides the data.</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://asiakay.github.io/react-redux-chakraui-todo-list-app/">
+      <img src="https://res.cloudinary.com/asiala/image/upload/v1623703569/manage_todos_okwzsi.png" alt="Manage Todos" width="600px" height="400px">
+    </a>
+    <div class="desc text-justify"><h6>Nighttime Todos:</h6>is a to-do list application made for viewing at night. The front-end is built with React and implements the ChakraUI component library. On the back-end, it manages the state and status of each to-do item using React Hooks.
+
+    </div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://asialakay.net/the-asialakay-brand/">
+      <img src="https://res.cloudinary.com/asiala/image/upload/v1623703914/asialakaydotnet_n7fwtk.png" alt="visit blog" width="600px" height="400px">
+    </a>
+    <div class="desc text-justify"><h6>AsiaLAKAYdotnet Blog:</h6>is a customized WordPress blog that provides users with access to an updated event calendar, developer resources, and curated content centered around current events.
+    </div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  <p></p>
+  <p></p>
+</div>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+    
+       
+    
+    
+  
+
+
+
+
+
+
+
+
+
+
+     
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+  <p class="h4 mb-4 text-center" id="contact">Contact Me</p>
+
+<div class="container"></div>
+
+<!-- <div class="container p-3" id="contact">
+<form id="contact" action="/sendemail" method="post" enctype ="multipart/form-data" name="contactform" class="text-center border border-light p-5" >
+
+    <p class="h4 mb-4" >Contact Me</p>
+
+    <input type="text" id="Name" name="name" class="form-control mb-4" placeholder="Name" required>
+
+    <input type="email" name="email" id="Email" class="form-control mb-4" placeholder="E-mail" required>
+
+    <input type="text" name="subject" id="Subject" class="form-control mb-4" placeholder="Subject" required>
+   
+
+    <div class="form-group">
+        <textarea name="message" class="form-control rounded-0" id="Message" rows="3" placeholder="Message" required></textarea>
+    </div> -->
+
+    <!-- Copy -->
+<!--     <div class="custom-control custom-checkbox mb-4">
+        <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+        <label class="custom-control-label" for="defaultContactFormCopy">Send me a copy of this message</label>
+    </div> 
+
+    <button name="submit" class="btn btn-info btn-block"  id="contact-submit" type="submit">Send</button>
+
+</form>
+</div>
+-->
+
+
+
+
+
+
+
+
+ 
+  
+
+
+</main>
+
+<footer>
+  
+
+
+<footer class="bg-dark text-center text-white">
+
+
+
+  <!-- Grid container -->
+  <div class="container p-3">
+    <!-- Section: Social media -->
+    <section class="mb-2">
+
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+  
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    &copy; 2020 Copyright Asia L. Grady
+  </div>
+  <!-- Copyright -->
+</footer>
+
+<!-- cloudinary media gallery config starts -->
+<script src="https://media-library.cloudinary.com/global/all.js"></script>
+
+<script>
+window.ml = cloudinary.createMediaLibrary({
+   cloud_name: CLOUD_NAME,
+   api_key: API_KEY,
+   username: USERNAME,
+   button_class: 'myBtn',
+   button_caption: 'View Media',
+ }, {
+     insertHandler: function (data) {
+        data.assets.forEach(asset => { 
+          console.log("Inserted asset:", JSON.stringify(asset, null, 2))
+      })
+    }
+  },
+    document.getElementById("open-btn")
+)
+</script>
+
+  <!-- cloudinary media gallery config ends -->
+<!-- could do a window.display or getElementbyID  -->
+<script type="text/javascript">
+  function onData(data) {
+      const highest = event.detail.highest;
+      console.log(`Highest score was ${highest.score} on ${highest.date}`);
+    }
+    document.querySelector('#skills-chart').addEventListener('data', onData);
+    </script>
+</footer>
+</div>
+</div>
+
+</body>
+</html>

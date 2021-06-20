@@ -15,7 +15,7 @@ app.get('/', function(req, res){
   res.render('pages/index');
 });  
 app.get('/contact')
-
+res.render('pages/contact');
 // not working 
 /* app.get('/', function(req, res){
   res.sendFile(path.join(__dirname, 'pages/index'));
